@@ -18,7 +18,9 @@
       username: ssodev
       password: sso2022ok
 
-**4** **.** สร้าง `database: ssotest`
+**4** **.** สร้าง 
+
+    database: ssotest
 
 **5** **.** เปิด Debeaver เชื่อม database โดยกำหนดให้
 
@@ -98,4 +100,5 @@
 ```
 
 ----------------------
+
 
