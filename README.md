@@ -59,9 +59,13 @@
 
 **1.**  กด Run ที่ class TokenApplication เพื่อใช้งาน Spring Boot และเปิดเซิร์ฟเวอร์
 
-**2.** ใช้งาน swagger โดยเข้าลิ้งนี้ `http://localhost:8080/apitest/swagger-ui.html`
+**2.** ใช้งาน swagger โดยเข้าลิ้งนี้ 
 
-**3.** เลือกใช้งาน `POST api/generateToken`
+    http://localhost:8080/apitest/swagger-ui.html
+
+**3.** เลือกใช้งาน 
+
+    POST api/generateToken
 
 **4.** ทำการใส่ข้อมูลใน Request body
 **4.1** ถ้าใส่ข้อมูลครบ จะทำการเพิ่มข้อมูลได้ และบันทึกลง database โดยใน swagger จะขึ้นแบบนี้
