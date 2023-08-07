@@ -76,23 +76,25 @@
 **4.2** ถ้าใส่ข้อมูลไม่ครบ จะเพิ่มข้อมูลไม่ได้ และไม่ได้บันทึกลง database โดยใน swagger จะขึ้นแบบนี้
   ```
    Ex.เพิ่มข้อมูลไม่สำเร็จ HTTP 400
-   { 
-	"timestamp": "2023-08-07T07:38:32.650+00:00",
-    "status": 400, 
-    "error": "Bad Request", 
-    "path": "/api/generateToken" 
-   }
+{
+  "responseCode": "E00001",
+  "responseMessage": "ไม่สามารถบันทึกข้อมูลลงฐานข้อมูลได้ เพราะ กรอกข้อมูลไม่ครบ",
+  "responseData": {
+    "userId": null,
+    "tokenId": null }
+}
 ```
 
 **4.3** เมื่อกดเพิ่มข้อมูล แล้วเกิดข้อผิดพลาดในการเชื่อม database  โดยใน swagger จะขึ้นแบบนี้
   ```
    Ex.เพิ่มข้อมูลไม่สำเร็จ HTTP 500
-   { 
-	"timestamp": "2023-08-07T07:38:32.650+00:00",
-    "status": 500, 
-    "error": "Bad Request", 
-    "path": "/api/generateToken" 
-   }
+{
+  "responseCode": "E00001",
+  "responseMessage": "ไม่สามารถบันทึกข้อมูลลงฐานข้อมูลได้ เพราะ เกิดข้อผิดพลาดในการเชื่อมต่อฐานข้อมูล",
+  "responseData": {
+    "userId": uuu2,
+    "tokenId": s1a222 }
+}
 ```
 
 ----------------------
